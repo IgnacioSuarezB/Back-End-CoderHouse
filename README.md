@@ -4,5 +4,6 @@
 
 ### https://third-fan-decision.glitch.me/
 
-/products devuelve todos los productos
-/productRandom devuelve un producto a azar (solo hay 3 hardcodeados hasta el momento)
+/products devuelve todos los productos.
+
+/productRandom devuelve un producto a azar (solo hay 3 hardcodeados hasta el momento).
