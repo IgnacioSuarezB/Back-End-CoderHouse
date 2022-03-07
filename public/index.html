@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back End</title>
+    <meta name="description" content="Página default del back" />
+    <link rel="icon" href="/img/logo.svg" type="image/svg" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e6f17a48b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Barra de Navegación Index -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark menu border-bottom border-2 border-secondary"
+    >
+      <div class="container md-conteiner-fluid">Barra de navegación</div>
+    </nav>
+    <div class="container flex-grow-1 text-white">
+      <!-- Primera Sección -->
+      <main class="row py-4">
+        <div class="col-md-12 col-lg-6">
+          <h1 class="">Curso Back End</h1>
+        </div>
+        <form action="/api/products" method="POST" class="pt-3 d-flex row">
+          <legend>Agregar producto</legend>
+          <label for="title" class="mb-3"
+            >Nombre:
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="bg-transparent border border-3 border-top-0 border-end-0 border-start-0 border-secondary text-white"
+              required
+          /></label>
+          <label for="price" class="mb-3"
+            >Precio:
+            <input
+              type="number"
+              name="price"
+              id="price"
+              class="bg-transparent border border-3 border-top-0 border-end-0 border-start-0 border-secondary text-white"
+              required
+          /></label>
+          <label for="thumbnail" class="mb-3"
+            >URL imagen:
+            <input
+              type="text"
+              name="thumbnail"
+              id="thumbnail"
+              class="bg-transparent border border-3 border-top-0 border-end-0 border-start-0 border-secondary text-white"
+              required
+          /></label>
+          <button
+            type="submit"
+            class="btn btn-secondary border-0 btn-block mb-4 col-lg-4 text-white"
+            id="form__bt--colorhover-1"
+          >
+            Agregar
+          </button>
+        </form>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-bg white-color">
+      <footer class="py-3 container">
+        <div
+          class="border-bottom pb-3 mb-3 row justify-content-between ms-3 ms-sm-0"
+        ></div>
+        <p class="text-center text-muted">
+          Suarez Barraza, Ignacio 2022
+          <i class="far fa-copyright"></i>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e6f17a48b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

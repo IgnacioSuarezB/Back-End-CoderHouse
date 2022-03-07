@@ -1,0 +1,61 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  /* color: whitesmoke; */
+}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(9, 103, 121, 1) 4%,
+    rgba(0, 0, 0, 1) 73%
+  );
+}
+.menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+}
+.dropdown-menu {
+  background-color: transparent;
+}
+.dropdown-item {
+  color: whitesmoke;
+}
+#logo-color {
+  color: whitesmoke !important;
+}
+.white-color {
+  color: whitesmoke !important;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+a {
+  transition: all 0.5s !important;
+}
+a:hover {
+  color: aqua !important;
+  transform: scale(1.1);
+}
+
+.marcas img {
+  width: 150px;
+  height: auto;
+  transition: all 0.5s;
+}
+.marcas img:hover {
+  transform: scale(1.1);
+  z-index: 90;
+}
+#bt-send:hover {
+  background-color: rgba(0, 255, 255, 0.603) !important;
+}
+.footer-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#map-description {
+  border-radius: 2rem !important;
+}
+@media (min-width: 992px) {
+  .dropdown-menu-lg {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
