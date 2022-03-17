@@ -29,7 +29,6 @@ module.exports = class Container {
   }
 
   async getById(id) {
-    id = parseInt(id);
     try {
       let data = await fs.promises.readFile(this.path, this.format);
       data = JSON.parse(data);

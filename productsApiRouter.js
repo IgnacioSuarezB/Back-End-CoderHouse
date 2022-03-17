@@ -6,7 +6,7 @@ let productContainer = new ProductContainer(containerName, containerFormat);
 const express = require("express");
 const productsRouter = express.Router();
 
-productsRouter.get("", async (req, res, next) => {
+productsRouter.get("/", async (req, res, next) => {
   try {
     const allProducts = await productContainer.getAll();
     res.send(allProducts);
@@ -17,7 +17,7 @@ productsRouter.get("", async (req, res, next) => {
 
 productsRouter.get("/:id", async (req, res, next) => {
   try {
-    const product = await productContainer.getById(req.params.id);
+    const product = await productContainer.getById(+req.params.id);
     if (!product) {
       const err = new Error("The id does not exist");
       err.name = "badId";
@@ -30,7 +30,7 @@ productsRouter.get("/:id", async (req, res, next) => {
   }
 });
 
-productsRouter.post("", async (req, res, next) => {
+productsRouter.post("/", async (req, res, next) => {
   try {
     const newId = await productContainer.save(req.body);
     res.send(JSON.stringify({ newId }));
