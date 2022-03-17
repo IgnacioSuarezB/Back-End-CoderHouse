@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./general/head.ejs') %>
+  <body class="d-flex flex-column min-vh-100">
+    <%- include('./general/navbar.ejs') %>
+    <div class="container flex-grow-1 text-white">
+      <%- include('./products/productsTable.ejs', {allProducts}) %>
+    </div>
+    <%- include('./general/footer.ejs') %>
+  </body>
+</html>
