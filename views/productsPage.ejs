@@ -4,8 +4,11 @@
   <body class="d-flex flex-column min-vh-100">
     <%- include('./general/navbar.ejs') %>
     <div class="container flex-grow-1 text-white">
-      <%- include('./products/productsTable.ejs', {allProducts}) %>
+      <%- include('./products/productsForm.ejs') %> <%-
+      include('./products/productsTable.ejs', {allProducts}) %>
     </div>
     <%- include('./general/footer.ejs') %>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/productsPageMain.js"></script>
   </body>
 </html>

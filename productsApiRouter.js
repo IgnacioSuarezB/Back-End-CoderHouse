@@ -32,6 +32,7 @@ productsRouter.get("/:id", async (req, res, next) => {
 
 productsRouter.post("/", async (req, res, next) => {
   try {
+    console.log("Salto", req.body);
     const newId = await productContainer.save(req.body);
     res.send(JSON.stringify({ newId }));
   } catch (err) {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Back End</title>
     <meta name="description" content="Página default del back" />
-    <link rel="icon" href="/img/logo.svg" type="image/svg" />
+    <!--<link rel="icon" href="/img/logo.svg" type="image/svg" /> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,6 +86,64 @@
           </button>
         </form>
       </main>
+      <!-- <div>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Foto</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+      <div class="row h-100 pt-3">
+        <div class="col-md-4 my-auto">
+          <form id="noteForm" class="rounded-0">
+            <h1 class="h3">Chat Online</h1>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ingresa tu mail"
+              class="form-control rounded-0 mb-3"
+              required
+              autofocus
+            />
+
+            <textarea
+              name="message"
+              id="message"
+              rows="2"
+              placeholder="Escribe tu mensaje"
+              required
+              class="form-control rounded-0 mb-3"
+            ></textarea>
+            <button class="btn btn-dark rounded-0">Send</button>
+          </form>
+        </div>
+        <div class="col-md-8 py-3" id="chat"></div>
+      </div>
     </div>
     <!-- FOOTER -->
     <div class="footer-bg white-color">
@@ -108,5 +166,7 @@
       src="https://kit.fontawesome.com/e6f17a48b5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

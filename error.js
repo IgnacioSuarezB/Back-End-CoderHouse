@@ -16,7 +16,7 @@ function errorResponder(error, req, res, next) {
 }
 
 const invalidPathHandler = (req, res, next) => {
-  res.redirect("/error");
+  //res.redirect("/error");
 };
 
 module.exports = { errorResponder, invalidPathHandler };
